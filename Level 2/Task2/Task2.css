@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #333;
+  background-color: antiquewhite;
+
+}
+
+.site-header,
+.site-main,
+.site-footer {
+  padding: 2rem 4%;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.site-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+.site-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+.site-nav a:hover,
+.site-nav a:focus {
+  color: #007BFF;
+}
+
+.nav-toggle {
+  display: none;
+}
+.hamburger {
+  display: none;
+  cursor: pointer;
+  width: 2rem;
+  height: 1.5rem;
+  position: relative;
+}
+.hamburger span {
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #333;
+  left: 0;
+  transition: 0.4s;
+}
+.hamburger span:nth-child(1) {
+  top: 0;
+}
+.hamburger span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.hamburger span:nth-child(3) {
+  bottom: 0;
+}
+
+.nav-toggle:checked + .hamburger span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 50%;
+}
+.nav-toggle:checked + .hamburger span:nth-child(2) {
+  opacity: 0;
+}
+.nav-toggle:checked + .hamburger span:nth-child(3) {
+  transform: rotate(-45deg);
+  bottom: 50%;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  .site-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
+  .site-nav ul {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+  .nav-toggle:checked ~ .site-nav {
+    max-height: 300px; 
+  }
+}
+
+.site-main {
+  padding: 2rem 4%;
+}
+
+.intro{
+  text-align: center;
+}
+.intro img {
+  max-width: 60%; 
+  height: auto;
+  margin-top: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intro h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.intro p {
+  font-size: 1.125rem;
+  max-width: 700px;
+  margin: 0 auto;         
+  text-align: center;     
+}
+
+
+.site-footer {
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 1rem 4%;
+  background: #fff;
+  border-top: 1px solid #ccc;
+  margin-top: 2rem;
+}
+
+@media (max-width: 480px) {
+  .intro h1 {
+    font-size: 1.5rem;
+  }
+  .intro p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    font-size: 1.125rem;
+  }
+}
+@media (min-width: 1600px) {
+  .site-header {
+    padding: 2rem 8%;
+  }
+  .site-main {
+    padding: 3rem 8%;
+  }
+  .site-footer {
+    padding: 2rem 8%;
+  }
+}
