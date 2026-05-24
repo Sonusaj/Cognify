@@ -1,0 +1,111 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Image Gallery + Auto-Slideshow (HTML & CSS)</title>
+<link rel="stylesheet" href="Task1.css">
+</head>
+<body>
+  <div class="wrap">
+
+    <h1>Image Gallery </h1>
+
+    <div class="thumbs" aria-hidden="false">
+    
+      <a class="thumb" href="#img1">
+        <img src="Taj_Mahal.jpeg" alt="Taj_Mahal">
+        <div class="thumb-title">Taj Mahal</div>
+      </a>
+
+      <a class="thumb" href="#img2">
+        <img src="Stonehenge.jpg" alt="Stonehenge">
+        <div class="thumb-title">Stonehenge</div>
+      </a>
+
+      <a class="thumb" href="#img3">
+        <img src="The_Great_Wall_of_China.jpg" alt="The_Great_Wall_of_China">
+        <div class="thumb-title">The Great Wall Of China</div>
+      </a>
+
+      <a class="thumb" href="#img4">
+        <img src="Eiffel_Tower.jpg" alt="Eiffel_Tower">
+        <div class="thumb-title">Eiffel Tower</div>
+      </a>
+
+      <a class="thumb" href="#img5">
+        <img src="Statue_of_Liberty.jpg" alt="Statue_of_Liberty">
+        <div class="thumb-title">The Statue of Liberty</div>
+      </a>
+    </div>
+
+    <div id="img1" class="modal" aria-hidden="false">
+      <div class="modal-inner">
+        <a class="modal-close" href="#" title="Close"></a>
+        <img src="Taj_Mahal.jpeg" alt="Taj_Mahal">
+      </div>
+    </div>
+
+    <div id="img2" class="modal">
+      <div class="modal-inner">
+        <a class="modal-close" href="#" title="Close"></a>
+        <img src="Stonehenge.jpg" alt="Stonehenge">
+      </div>
+    </div>
+
+    <div id="img3" class="modal">
+      <div class="modal-inner">
+        <a class="modal-close" href="#" title="Close"></a>
+         <img src="The_Great_Wall_of_China.jpg" alt="The_Great_Wall_of_China">
+      </div>
+    </div>
+
+    <div id="img4" class="modal">
+      <div class="modal-inner">
+        <a class="modal-close" href="#" title="Close"></a>
+        <img src="Eiffel_Tower.jpg" alt="Eiffel_Tower">
+      </div>
+    </div>
+
+    <div id="img5" class="modal">
+      <div class="modal-inner">
+        <a class="modal-close" href="#" title="Close"></a>
+       <img src="Statue_of_Liberty.jpg" alt="Statue_of_Liberty">
+      </div>
+    </div>
+
+    <div class="slideshow" aria-hidden="false">
+      <div class="slideshow-title">Slideshow</div>
+      <div class="slides">
+        <div class="slide">
+          <img src="Taj_Mahal.jpeg" alt="Taj_Mahal" >
+          <div class="caption">Taj Mahal</div>
+        </div>
+
+        <div class="slide">
+           <img src="Stonehenge.jpg" alt="Stonehenge" >
+          <div class="caption">Stonehenge</div>
+        </div>
+
+        <div class="slide">
+              <img src="The_Great_Wall_of_China.jpg" alt="The_Great_Wall_of_China">
+          <div class="caption">The Great Wall Of China </div>
+        </div>
+
+        <div class="slide">
+          <img src="Eiffel_Tower.jpg" alt="Eiffel_Tower">
+          <div class="caption">Eiffel Tower</div>
+        </div>
+
+        <div class="slide">
+          <img src="Statue_of_Liberty.jpg" alt="Statue_of_Liberty">
+          <div class="caption">The Statue Of Liberty</div>
+        </div>
+      </div>
+
+    </div>
+
+  
+  </div>
+</body>
+</html>

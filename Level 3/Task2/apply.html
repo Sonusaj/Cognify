@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Apply for Web Developer Internship</title>
+  <link rel="stylesheet" href="apply.css">
+</head>
+<style>
+    body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.bg::before {
+  content: "";
+  background-image: url('img.jpg'); 
+  background-size: cover;
+  background-position: center;
+  filter: blur(2px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.bg {
+  position: relative;
+  z-index: 1;
+}
+
+.form-container {
+  max-width: 600px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #2d2dff;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input, textarea {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 12px;
+  background-color: #2d2dff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #cc1b5c;
+}
+
+</style>
+<body>
+    <div class="bg">
+  <div class="form-container">
+    <h1>Apply for Web Developer Internship</h1>
+    <form action="submit-form.php" method="POST" enctype="multipart/form-data">
+      <label for="name">Full Name*</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address*</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number*</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="profile">LinkedIn/GitHub Profile</label>
+      <input type="url" id="profile" name="profile">
+
+      <label for="skills">Your Key Skills</label>
+      <input type="text" id="skills" name="skills" placeholder="e.g., HTML, CSS, JS, React">
+
+      <label for="resume">Upload Resume (PDF only)*</label>
+      <input type="file" id="resume" name="resume" accept=".pdf" required>
+
+      <label for="message">Why do you want to join us?</label>
+      <textarea id="message" name="message" rows="5"></textarea>
+
+      <button type="submit">Submit Application</button>
+    </form>
+  </div>
+  </div>
+</body>
+</html>
