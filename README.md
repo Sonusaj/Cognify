@@ -28,7 +28,3 @@ During this internship, I worked on various technical tasks that helped improve 
 
 ## Outcome
 This internship helped me gain practical experience, improve technical knowledge, and understand real-world project development workflows.
-
-## Author
-Your Name  
-Computer Science Student
