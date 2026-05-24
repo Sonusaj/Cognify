@@ -1,0 +1,41 @@
+body {
+  font-family: Roboto;
+  padding: 20px;
+  background: #d1a0a0;
+}
+
+h1 {
+  text-align: center;
+}
+
+.task {
+  margin: 20px auto;
+  padding: 15px;
+  background: white;
+  border-radius: 10px;
+  max-width: 400px;
+  box-shadow: 2px 2px 5px rgba(84, 71, 71, 0.1);
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border: none;
+  background-color: rgb(241, 86, 88);
+  color: white;
+  border-radius: 6px;
+  transition: background-color 0.1s;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+input {
+  padding: 8px;
+  width: 180px;
+  margin: 6px 0;
+  display: block;
+}
